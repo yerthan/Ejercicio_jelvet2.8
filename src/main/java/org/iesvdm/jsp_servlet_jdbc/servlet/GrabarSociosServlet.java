@@ -11,6 +11,9 @@ import java.io.IOException;
 import java.util.List;
 import java.util.Optional;
 
+//PLANTILLA DE CÓDIGO PARA SERVLETs EN INTELLIJ
+//https://www.jetbrains.com/help/idea/creating-and-configuring-web-application-elements.html
+
 //1A APROX. PATRÓN MVC -> M(dao, model y bbdd), V(jsp) & C(servlet)
 
 //                      v--NOMBRE DEL SERVLET           v--RUTAS QUE ATIENDE, PUEDE SER UN ARRAY {"/GrabarSociosServlet", "/grabar-socio"}
