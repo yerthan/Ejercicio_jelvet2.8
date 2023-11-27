@@ -18,7 +18,7 @@
         <div class="col-md-1 h3">Edad</div>
         <div class="col-md-1 h3">Estatura</div>
         <div class="col-md-3 h3">Localidad</div>
-        <div class="col-md-2 h3">Operación</div>
+        <div class="col-md-2 h3 text-center">Operación</div>
     </div>
     <%
     //                                                          v----RECOGER listado DE SOCIO DEL request
@@ -38,7 +38,7 @@
         <div class="col-md-3 align-self-center"><%=socio.getLocalidad()%>
         </div>
 
-        <div class="col-md-2 align-self-center">
+        <div class="col-md-2 align-self-center text-center">
             <form method="get" action="borraSocio.jsp">
                 <input type="hidden" name="codigo" value="<%=socio.getSocioId() %>"/>
                 <input class="btn btn-primary"  type="submit" value="Borrar">
