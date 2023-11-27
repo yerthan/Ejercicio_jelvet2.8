@@ -14,13 +14,19 @@
     <%
         List<Socio> listado = (List<Socio>) request.getAttribute("listado");
         for(Socio socio: listado) {
-          out.println("<tr><td>");
-          out.println(socio.getSocioId() + "</td>");
-          out.println("<td>" + socio.getNombre() + "</td>");
-          out.println("<td>" + socio.getEstatura() + "</td>");
-          out.println("<td>" + socio.getEdad() + "</td>");
-          out.println("<td>" + socio.getLocalidad() + "</td>");
-    %>
+          %>
+      <tr>
+        <td><%=socio.getSocioId() %>
+        </td>
+        <td><%=socio.getNombre() %>
+        </td>
+        <td><%=socio.getEdad() %>
+        </td>
+        <td><%=socio.getEstatura() %>
+        </td>
+        <td><%= socio.getLocalidad()%>
+        </td>
+
       <td>
       <form method="get" action="borraSocio.jsp">
         <input type="hidden" name="codigo" value="<%=socio.getSocioId() %>"/>

@@ -12,7 +12,7 @@ public class UtilServlet {
 
         //CÓDIGO DE VALIDACIÓN
         boolean valida = true;
-        int socioID = -1;
+        //int socioID = -1;
         String nombre = null;
         int estatura = -1;
         int edad = -1;
@@ -44,7 +44,7 @@ public class UtilServlet {
             if (request.getParameter("localidad").isBlank()) throw new RuntimeException("Parámetro vacío o todo espacios blancos.");
             localidad = request.getParameter("localidad");
 
-            return Optional.of(new Socio(socioID, nombre, estatura, edad, localidad));
+            return Optional.of(new Socio(-1, nombre, estatura, edad, localidad));
 
         } catch (Exception ex) {
             ex.printStackTrace();

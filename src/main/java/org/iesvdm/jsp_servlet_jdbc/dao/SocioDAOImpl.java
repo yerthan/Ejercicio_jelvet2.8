@@ -39,9 +39,7 @@ public class SocioDAOImpl extends AbstractDAOImpl implements SocioDAO {
             if (rsGenKeys.next())
                 socio.setSocioId(rsGenKeys.getInt(1));
 
-        } catch (SQLException e) {
-            e.printStackTrace();
-        } catch (ClassNotFoundException e) {
+        } catch (SQLException | ClassNotFoundException  e) {
             e.printStackTrace();
         } finally {
             closeDb(conn, ps, rs);
@@ -76,9 +74,7 @@ public class SocioDAOImpl extends AbstractDAOImpl implements SocioDAO {
                 listSocio.add(socio);
             }
 
-        } catch (SQLException e) {
-            e.printStackTrace();
-        } catch (ClassNotFoundException e) {
+        } catch (SQLException | ClassNotFoundException e) {
             e.printStackTrace();
         } finally {
             closeDb(conn, s, rs);
@@ -115,9 +111,7 @@ public class SocioDAOImpl extends AbstractDAOImpl implements SocioDAO {
                 return Optional.of(socio);
             }
 
-        } catch (SQLException e) {
-            e.printStackTrace();
-        } catch (ClassNotFoundException e) {
+        } catch (SQLException | ClassNotFoundException e) {
             e.printStackTrace();
         } finally {
             closeDb(conn, ps, rs);
@@ -144,14 +138,14 @@ public class SocioDAOImpl extends AbstractDAOImpl implements SocioDAO {
             ps.setInt(idx++, socio.getEdad());
             ps.setString(idx, socio.getLocalidad());
 
+            ps.setInt(idx++, socio.getSocioId());
+
             int rows = ps.executeUpdate();
 
             if (rows == 0)
                 System.out.println("Update de socio con 0 registros actualizados.");
 
-        } catch (SQLException e) {
-            e.printStackTrace();
-        } catch (ClassNotFoundException e) {
+        } catch (SQLException | ClassNotFoundException e) {
             e.printStackTrace();
         } finally {
             closeDb(conn, ps, rs);
@@ -178,9 +172,7 @@ public class SocioDAOImpl extends AbstractDAOImpl implements SocioDAO {
             if (rows == 0)
                 System.out.println("Delete de socio con 0 registros eliminados.");
 
-        } catch (SQLException e) {
-            e.printStackTrace();
-        } catch (ClassNotFoundException e) {
+        } catch (SQLException | ClassNotFoundException e) {
             e.printStackTrace();
         } finally {
             closeDb(conn, ps, rs);
