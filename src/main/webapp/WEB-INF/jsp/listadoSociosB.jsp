@@ -10,9 +10,12 @@
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
     <link rel="stylesheet" type="text/css" href="estilos.css" />
 </head>
-<body>
-<div class="container">
-    <div class="row head">
+<body class="bg-light">
+<div class="container bg-light">
+    <div class="row mb-2">
+        <div class="col-md-12 bg-light-subtle h1">Listado de Socios</div>
+    </div>
+    <div class="row bg-white">
         <div class="col-md-1 h3">ID</div>
         <div class="col-md-4 h3">Nombre</div>
         <div class="col-md-1 h3">Edad</div>
