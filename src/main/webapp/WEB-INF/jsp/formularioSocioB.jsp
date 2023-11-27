@@ -4,34 +4,37 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+  <link rel="stylesheet" type="text/css" href="estilos.css" />
 </head>
-<body>
-<div class="container">
+<body class="bg-light">
+<div class="container bg-white">
+  <div class="row border-bottom">
+    <div class="col-12 h2">Introduzca los datos del nuevo socio</div>
+  </div>
+</div>
+<div class="container bg-light">
   <form method="post" action="GrabarSociosServlet">
-    <div class="row mt-2">
-      <div class="col-12 h2">Introduzca los datos del nuevo socio</div>
+    <div class="row body mt-2">
+      <div class="col-md-6 align-self-center">Nombre</div>
+      <div class="col-md-6 align-self-center"><input type="text" name="nombre"/></div>
     </div>
-    <div class="row mt-2">
-      <div class="col-md-6">Nombre</div>
-      <div class="col-md-6"><input type="text" name="nombre"/></div>
+    <div class="row body mt-2">
+      <div class="col-md-6 align-self-center">Estatura</div>
+      <div class="col-md-6 align-self-center"><input type="text" name="estatura"/></div>
     </div>
-    <div class="row mt-2">
-      <div class="col-md-6">Estatura</div>
-      <div class="col-md-6"><input type="text" name="estatura"/></div>
+    <div class="row body mt-2">
+      <div class="col-md-6 align-self-center">Edad</div>
+      <div class="col-md-6 align-self-center"><input type="text" name="edad"/></div>
     </div>
-    <div class="row mt-2">
-      <div class="col-md-6">Edad</div>
-      <div class="col-md-6"><input type="text" name="edad"/></div>
-    </div>
-    <div class="row mt-2">
-      <div class="col-md-6">Localidad</div>
-      <div class="col-md-6"><input type="text" name="localidad"/></div>
+    <div class="row body mt-2">
+      <div class="col-md-6 align-self-center">Localidad</div>
+      <div class="col-md-6 align-self-center"><input type="text" name="localidad"/></div>
     </div>
     <div class="row mt-2">
       <div class="col-md-6">
         &nbsp;
       </div>
-      <div class="col-md-6">
+      <div class="col-md-6 align-self-center">
         <input class="btn btn-primary" type="submit" value="Aceptar">
       </div>
     </div>
