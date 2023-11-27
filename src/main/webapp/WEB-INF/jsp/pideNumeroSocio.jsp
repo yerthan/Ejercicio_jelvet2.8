@@ -12,10 +12,14 @@
     <table>
       <tr><th>Código</th><th>Nombre</th><th>Estatura</th><th>Edad</th><th>Localidad</th></tr>
     <%
+<%--                                                              v----RECOGER listado DE SOCIO DEL request --%>
         List<Socio> listado = (List<Socio>) request.getAttribute("listado");
+
+<%--      FOR-EACH SOBRE LA COLECCIÓN DE listado DE SOCIO--%>
         for(Socio socio: listado) {
           %>
       <tr>
+<%--           v--- EXPRESIÓN ACCEDIENDO A LOS VALORES DE SOCIO--%>
         <td><%=socio.getSocioId() %>
         </td>
         <td><%=socio.getNombre() %>
@@ -34,6 +38,8 @@
       </form>
       </td></tr>
     <%
+
+<%--    v--- FIN DEL BUCLE FOR CON HTML INCRUSTADO--%>
       } // for
      %>
     </table>
