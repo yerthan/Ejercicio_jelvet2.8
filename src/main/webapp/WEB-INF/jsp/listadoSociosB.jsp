@@ -11,11 +11,11 @@
     <link rel="stylesheet" type="text/css" href="estilos.css" />
 </head>
 <body class="bg-light">
-<div class="container bg-light">
-    <div class="row mb-2">
-        <div class="col-md-12 bg-light-subtle h1">Listado de Socios</div>
+<div class="container bg-white fixed-top">
+    <div class="row mb-2 border-bottom">
+        <div class="col-md-12 h1">Listado de Socios</div>
     </div>
-    <div class="row bg-white">
+    <div class="row ">
         <div class="col-md-1 h3">ID</div>
         <div class="col-md-4 h3">Nombre</div>
         <div class="col-md-1 h3">Edad</div>
@@ -23,6 +23,9 @@
         <div class="col-md-3 h3">Localidad</div>
         <div class="col-md-2 h3 text-center">Operación</div>
     </div>
+</div>
+
+<div class="container bg-light">
     <%
     //                                                          v----RECOGER listado DE SOCIO DEL request
     List<Socio> listado = (List<Socio>) request.getAttribute("listado");
