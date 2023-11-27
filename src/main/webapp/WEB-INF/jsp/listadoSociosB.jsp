@@ -8,10 +8,11 @@
 <head>
     <title>Listado de Socios</title>
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="estilos.css" />
 </head>
 <body>
 <div class="container">
-    <div class="row">
+    <div class="row head">
         <div class="col-md-1 h3">ID</div>
         <div class="col-md-4 h3">Nombre</div>
         <div class="col-md-1 h3">Edad</div>
@@ -25,19 +26,19 @@
     // FOR-EACH SOBRE LA COLECCIÓN DE listado DE SOCIO
     for (Socio socio: listado) {
     %>
-    <div class="row mt-2">
-        <div class="col-md-1"><%=socio.getSocioId() %>
+    <div class="row mt-2 body">
+        <div class="col-md-1 align-self-center"><%=socio.getSocioId() %>
         </div>
-        <div class="col-md-4"><%=socio.getNombre() %>
+        <div class="col-md-4 align-self-center"><%=socio.getNombre() %>
         </div>
-        <div class="col-md-1"><%=socio.getEdad() %>
+        <div class="col-md-1 align-self-center"><%=socio.getEdad() %>
         </div>
-        <div class="col-md-1"><%=socio.getEstatura() %>
+        <div class="col-md-1 align-self-center"><%=socio.getEstatura() %>
         </div>
-        <div class="col-md-3"><%=socio.getLocalidad()%>
+        <div class="col-md-3 align-self-center"><%=socio.getLocalidad()%>
         </div>
 
-        <div class="col-md-2">
+        <div class="col-md-2 align-self-center">
             <form method="get" action="borraSocio.jsp">
                 <input type="hidden" name="codigo" value="<%=socio.getSocioId() %>"/>
                 <input class="btn btn-primary"  type="submit" value="Borrar">
