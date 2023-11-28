@@ -83,6 +83,10 @@ public class GrabarSociosServlet extends HttpServlet {
             //                                  V
             request.setAttribute("listado", listado);
 
+            //ESTABLEZCO EL ATRIBUTO DE newSocioID EN EL ÁMBITO DE REQUEST
+            //PARA LANZAR UN MODAL Y UN EFECTO SCROLL EN LA VISTA JSP
+            request.setAttribute("newSocioID", socio.getSocioId() );
+
             //POR ÚLTIMO, REDIRECCIÓN INTERNA PARA LA URL /GrabarSocioServlet A pideNumeroSocio.jsp
             //                                                                      |
             //                                                                      V
