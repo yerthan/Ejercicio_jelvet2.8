@@ -99,7 +99,7 @@
             //PARA HACER SMOOTH SCROLL AL ELEMENTO NUEVO ELEMENTO EN LA PÁGINA
             $('html, body').animate({
                 scrollTop: $('#<%=newSocioID%>').offset().top
-            }, 2000);
+            }, 2000, () => $('#<%=newSocioID%>').addClass('highlight'));
         });
 
         //IMPLEMENTANDO UN BOTÓN backToTop

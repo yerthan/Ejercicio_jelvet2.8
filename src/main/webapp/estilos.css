@@ -30,7 +30,6 @@ th{
     background: -moz-linear-gradient(
         center bottom,
         rgb(123,192,67) 2%,
-
         rgb(139,198,66) 51%,
         rgb(158,217,41) 87%
         );
@@ -58,6 +57,7 @@ tbody td{
     text-shadow:1px 1px 1px #fff;
 }
 
+.highlight { background-color:yellow !important; }
 
 /* For small screen */
 .row.body:nth-child(even){

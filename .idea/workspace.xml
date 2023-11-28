@@ -12,6 +12,7 @@
     <list default="true" id="739e422a-ce2f-4c56-a118-8ca65f865cf4" name="Changes" comment="Más dinamismos jquery">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/listadoSociosB.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/listadoSociosB.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/estilos.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/estilos.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,6 +91,7 @@
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "JavaScript.Libraries",
+    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\IntelliJ IDEA 2023.2.3\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -186,7 +188,7 @@
       <workItem from="1701101700130" duration="6233000" />
       <workItem from="1701107961237" duration="31000" />
       <workItem from="1701105202338" duration="8771000" />
-      <workItem from="1701184849792" duration="820000" />
+      <workItem from="1701184849792" duration="1733000" />
     </task>
     <task id="LOCAL-00001" summary="Commit inicial">
       <option name="closed" value="true" />
@@ -300,7 +302,15 @@
       <option name="project" value="LOCAL" />
       <updated>1701185585770</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Más dinamismos jquery">
+      <option name="closed" value="true" />
+      <created>1701185679202</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1701185679202</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
