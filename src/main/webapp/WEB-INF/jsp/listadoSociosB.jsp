@@ -95,11 +95,14 @@
         $('#newSocioIDModal').modal('show');
         $('#newSocioIDModal').on('click', 'button.close', function (eventObject) {
             $('#newSocioIDModal').modal('hide');
+
             //PARA HACER SMOOTH SCROLL AL ELEMENTO NUEVO ELEMENTO EN LA PÁGINA
             $('html, body').animate({
                 scrollTop: $('#<%=newSocioID%>').offset().top
             }, 2000);
         });
+
+        //IMPLEMENTANDO UN BOTÓN backToTop
         let btn = $('#backToTop');
         $(window).on('scroll', function() {
             if ($(window).scrollTop() > 300) {
@@ -114,6 +117,7 @@
                 scrollTop: 0
             }, '300');
         });
+
     });
 </script>
 <% } %>
