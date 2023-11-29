@@ -10,9 +10,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="739e422a-ce2f-4c56-a118-8ca65f865cf4" name="Changes" comment="Más dinamismos jquery">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/iesvdm/jsp_servlet_jdbc/servlet/ListarSociosServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/listadoSociosB.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/listadoSociosB.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/estilos.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/estilos.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,10 +25,10 @@
       <list>
         <option value="Servlet" />
         <option value="Interface" />
-        <option value="Class" />
         <option value="Jsp File" />
         <option value="JavaScript File" />
         <option value="CSS File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -188,7 +189,7 @@
       <workItem from="1701101700130" duration="6233000" />
       <workItem from="1701107961237" duration="31000" />
       <workItem from="1701105202338" duration="8771000" />
-      <workItem from="1701184849792" duration="1733000" />
+      <workItem from="1701184849792" duration="4325000" />
     </task>
     <task id="LOCAL-00001" summary="Commit inicial">
       <option name="closed" value="true" />
@@ -310,11 +311,30 @@
       <option name="project" value="LOCAL" />
       <updated>1701185679202</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Más dinamismos jquery">
+      <option name="closed" value="true" />
+      <created>1701186791314</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1701186791314</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Commit inicial" />
