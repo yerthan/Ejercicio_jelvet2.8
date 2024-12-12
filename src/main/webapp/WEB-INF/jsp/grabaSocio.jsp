@@ -9,8 +9,12 @@
 </head>
 <body>
 <%
+    Class.forName("com.mysql.jdbc.Driver");
+    //CADA BBDD TIENE SU PROPIA URL DE JDBC--->
+    //Para la BBDD lo que tenemos que hacer es ponerle la ruta, usuario y contraseña
+    //Connection conexion = DriverManager.getConnection("jdbc:mysql://localhost:3307/baloncesto", "root", "secret");
 
-
+    boolean valida;
     if (valida) {
 
         Connection conn = null;

@@ -153,7 +153,7 @@ public class SocioDAOImpl extends AbstractDAOImpl implements SocioDAO {
 
     }
 
-    @Override
+    //@Override
     public void delete(int id) {
 
         Connection conn = null;

@@ -14,5 +14,9 @@ public interface SocioDAO {
 
     public void update(Socio socio);
 
-    public void delete(int id);
+    public static void delete(int id) {
+
+    }
+
+
 }

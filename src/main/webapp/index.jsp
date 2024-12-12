@@ -5,7 +5,7 @@
 <body>
 Redirigiendo. Por favor, espere...
 <%
-    response.sendRedirect("ListarSociosServlet");
+    response.sendRedirect("../java/org/iesvdm/jsp_servlet_jdbc/servlet/ListarSociosServlet.java");
 %>
 </body>
-</html>
+</html>z
