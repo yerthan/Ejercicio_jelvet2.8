@@ -8,7 +8,7 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import org.iesvdm.jsp_servlet_jdbc.dao.SocioDAO;
 
-@WebServlet(name = "BorrarSocioServlet", value="/EditaSocioServlet")
+@WebServlet(name = "EditaSocioServlet", value="/EditaSocioServlet")
 public class EditaSocioServlet extends HttpServlet {
 
     private SocioDAO socioDAO;
@@ -22,5 +22,10 @@ public class EditaSocioServlet extends HttpServlet {
 
     }
 
+    protected void get(HttpServletRequest request, HttpServletResponse response){
+        RequestDispatcher dispatcher = null;
+        String codigoString = request.getParameter("codigo");
+        Integer codigo = null;
+    }
 
 }

@@ -21,7 +21,7 @@ public class ListarSociosServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-        RequestDispatcher dispatcher = request.getRequestDispatcher("/WEB-INF/jsp/listadoSociosB.jsp");
+        RequestDispatcher dispatcher = request.getRequestDispatcher("../../webapp/WEB-INF/jsp/listadoSociosB.jsp");
 
         List<Socio> listado = this.socioDAO.getAll();
         request.setAttribute("listado", listado);

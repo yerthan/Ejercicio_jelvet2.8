@@ -40,10 +40,10 @@ public class BorrarSocioServlet extends HttpServlet {
             //response.sendRedirect("ListarSocioServlet");
 
             //PERO QUIERO REFIERECCION INTERNA
-
+            org.iesvdm.jsp_servlet_jdbc.dao.SocioDAO.delete(codigo);
             List<Socio> listado = this.SocioDAO.getAll();
             request.setAttribute("listado", listado);
-            dispatcher = request.getRequestDispatcher("/WEB-INF/jsp/listadoSocio.jsp");
+            dispatcher = request.getRequestDispatcher("/WEB-INF/jsp/listadoSocios.jsp");
             dispatcher.forward(request, response);
         }else{
 
